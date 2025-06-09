@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk标题生成器</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            color: #ffffff;
+        }
+        .container {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #90ffe0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .upload-area {
+            border: 2px dashed #555;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            background: #333;
+            transition: background 0.3s;
+        }
+        .upload-area:hover {
+            background: #444;
+            border-color: #90ffe0;
+        }
+        .upload-area.dragover {
+            background: #444;
+            border-color: #90ffe0;
+        }
+        #imageInput {
+            display: none;
+        }
+        .upload-btn {
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .upload-btn:hover {
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+        }
+        .image-preview {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .image-preview-container {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid #555;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .image-preview img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            height: auto;
+            max-width: none;
+            max-height: none;
+            border: none;
+            border-radius: 0;
+            object-fit: none;
+            object-position: bottom right;
+            transform: none;
+        }
+        .image-info {
+            margin: 10px 0;
+            padding: 10px;
+            background: #333;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .output-area {
+            margin-top: 20px;
+        }
+        .code-output {
+            background: #1a1a1a;
+            border: 1px solid #555;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .copy-btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .copy-btn:hover {
+            background: #45a049;
+        }
+        .instructions {
+            background: #2a4a4a;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #90ffe0;
+        }
+        .instructions h3 {
+            color: #90ffe0;
+            margin-top: 0;
+        }
+        .language-selector {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .lang-btn {
+            background: #444;
+            color: #fff;
+            border: 1px solid #666;
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .lang-btn:hover {
+            background: #555;
+        }
+        .lang-btn.active {
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            border-color: #90ffe0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <button class="lang-btn active" onclick="switchLanguage('zh')" id="btn-zh">🇨🇳 中文</button>
+            <button class="lang-btn" onclick="switchLanguage('en')" id="btn-en">🇺🇸 English</button>
+        </div>
+
+        <h1 id="main-title">🎨 Cyberpunk标题生成器</h1>
+        
+        <div class="instructions">
+            <h3 id="instructions-title">使用说明：</h3>
+            <ol id="instructions-list">
+                <li id="instruction-1">点击上传按钮或拖拽PNG图像文件到虚线框内</li>
+                <li id="instruction-2">系统会自动生成base64编码和对应的JS代码</li>
+                <li id="instruction-3">复制生成的代码并粘贴到 <code>titleImages.js</code> 文件中</li>
+                <li id="instruction-4">保存文件后重新加载ComfyUI即可使用新图像</li>
+            </ol>
+        </div>
+
+                <div class="upload-area" id="uploadArea">
+            <p id="upload-text">点击按钮选择文件或拖拽PNG图像到此处</p>
+            <button class="upload-btn" onclick="document.getElementById('imageInput').click()" id="upload-btn">
+                📁 <span id="upload-btn-text">选择图像文件</span>
+            </button>
+            <input type="file" id="imageInput" accept=".png,.jpg,.jpeg,.gif" multiple>
+        </div>
+        <div class="instructions" style="margin-top: 20px;">
+            <h3 id="theme-name-title">🏷️ 主题名称设置</h3>
+            <p id="theme-name-desc">为转换的图像指定自定义主题名称</p>
+            <div style="margin: 15px 0;">
+                <label for="themeNameInput" id="theme-name-label" style="display: block; margin-bottom: 8px; color: #90ffe0; font-weight: bold;">主题名称：</label>
+                <input type="text" id="themeNameInput" placeholder="请输入主题名称，如：科技风格" style="width: 100%; padding: 10px; border: 1px solid #555; border-radius: 5px; background: #333; color: #fff; font-size: 14px;" maxlength="50">
+                <small id="theme-name-hint" style="color: #888; font-size: 12px; display: block; margin-top: 5px;">💡 留空将使用文件名作为主题名称</small>
+            </div>
+        </div>
+
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const LANGUAGE_TEXTS = {
+            zh: {
+                mainTitle: '🎨 Cyberpunk标题生成器',
+                instructionsTitle: '使用说明：',
+                instruction1: '点击上传按钮或拖拽PNG图像文件到虚线框内',
+                instruction2: '系统会自动生成base64编码和对应的JS代码',
+                instruction3: '复制生成的代码并粘贴到 titleImages.js 文件中',
+                instruction4: '保存文件后重新加载ComfyUI即可使用新图像',
+                uploadText: '点击按钮选择文件或拖拽PNG图像到此处',
+                uploadBtnText: '选择图像文件',
+                fileSize: '文件大小',
+                fileType: '文件类型',
+                generatedCode: '📋 生成的JS代码：',
+                copyCode: '复制代码',
+                copied: '✅ 已复制',
+                copyHint: '💡 请将上述代码中的条目复制并添加到 titleImages.js 文件的 TITLE_IMAGES 对象中',
+                copyFailed: '复制失败，请手动选择代码复制',
+                themeNameTitle: '🏷️ 主题名称设置',
+                themeNameDesc: '为转换的图像指定自定义主题名称',
+                themeNameLabel: '主题名称：',
+                themeNamePlaceholder: '请输入主题名称，如：科技风格',
+                themeNameHint: '💡 留空将使用文件名作为主题名称'
+            },
+            en: {
+                mainTitle: '🎨 Cyberpunk Title Generator',
+                instructionsTitle: 'Instructions:',
+                instruction1: 'Click upload button or drag PNG image files to the dashed area',
+                instruction2: 'System will automatically generate base64 encoding and corresponding JS code',
+                instruction3: 'Copy the generated code and paste it into the titleImages.js file',
+                instruction4: 'Save the file and reload ComfyUI to use the new images',
+                uploadText: 'Click button to select files or drag PNG images here',
+                uploadBtnText: 'Select Image Files',
+                fileSize: 'File Size',
+                fileType: 'File Type',
+                generatedCode: '📋 Generated JS Code:',
+                copyCode: 'Copy Code',
+                copied: '✅ Copied',
+                copyHint: '💡 Please copy the above code entry and add it to the TITLE_IMAGES object in titleImages.js file',
+                copyFailed: 'Copy failed, please manually select and copy the code',
+                themeNameTitle: '🏷️ Theme Name Settings',
+                themeNameDesc: 'Specify a custom theme name for the converted image',
+                themeNameLabel: 'Theme Name:',
+                themeNamePlaceholder: 'Enter theme name, e.g.: Tech Style',
+                themeNameHint: '💡 Leave empty to use filename as theme name'
+            }
+        };
+
+        let currentLanguage = 'zh';
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`btn-${lang}`).classList.add('active');
+            updatePageTexts();
+            updateExistingResults();
+        }
+
+        function updatePageTexts() {
+            const texts = LANGUAGE_TEXTS[currentLanguage];
+            document.title = texts.mainTitle.replace('🎨 ', '');
+            document.getElementById('main-title').textContent = texts.mainTitle;
+            document.getElementById('instructions-title').textContent = texts.instructionsTitle;
+            document.getElementById('instruction-1').textContent = texts.instruction1;
+            document.getElementById('instruction-2').textContent = texts.instruction2;
+            document.getElementById('instruction-3').innerHTML = texts.instruction3.replace('titleImages.js', '<code>titleImages.js</code>');
+            document.getElementById('instruction-4').textContent = texts.instruction4;
+            document.getElementById('upload-text').textContent = texts.uploadText;
+            document.getElementById('upload-btn-text').textContent = texts.uploadBtnText;
+            document.getElementById('theme-name-title').textContent = texts.themeNameTitle;
+            document.getElementById('theme-name-desc').textContent = texts.themeNameDesc;
+            document.getElementById('theme-name-label').textContent = texts.themeNameLabel;
+            document.getElementById('themeNameInput').placeholder = texts.themeNamePlaceholder;
+            document.getElementById('theme-name-hint').textContent = texts.themeNameHint;
+        }
+
+        function updateExistingResults() {
+            const codeHeaders = document.querySelectorAll('.code-header');
+            const copyBtns = document.querySelectorAll('.copy-btn');
+            const fileInfos = document.querySelectorAll('.file-info');
+            const copyHints = document.querySelectorAll('.copy-hint');
+            
+            const texts = LANGUAGE_TEXTS[currentLanguage];
+            
+            codeHeaders.forEach(header => {
+                header.textContent = texts.generatedCode;
+            });
+            
+            copyBtns.forEach(btn => {
+                if (!btn.classList.contains('copied')) {
+                    btn.textContent = texts.copyCode;
+                }
+            });
+            
+            copyHints.forEach(hint => {
+                const imageName = hint.dataset.imageName || '';
+                hint.innerHTML = texts.copyHint.replace('条目', `'${imageName}' ${currentLanguage === 'zh' ? '条目' : 'entry'}`);
+            });
+        }
+
+        const uploadArea = document.getElementById('uploadArea');
+        const imageInput = document.getElementById('imageInput');
+        const results = document.getElementById('results');
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            handleFiles(files);
+        });
+        imageInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+
+
+        function handleFiles(files) {
+            results.innerHTML = '';
+            const themeNameInput = document.getElementById('themeNameInput');
+            const texts = LANGUAGE_TEXTS[currentLanguage];
+            if (files.length > 1) {
+                themeNameInput.value = '';
+                themeNameInput.placeholder = currentLanguage === 'zh' ? 
+                    '多文件模式：将使用各自文件名' : 
+                    'Multi-file mode: Will use respective filenames';
+            } else {
+                themeNameInput.placeholder = texts.themeNamePlaceholder;
+            }
+            
+            Array.from(files).forEach(file => {
+                if (file.type.startsWith('image/')) {
+                    processImage(file);
+                }
+            });
+        }
+
+        function processImage(file) {
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                const base64 = e.target.result;
+                const customThemeName = document.getElementById('themeNameInput').value.trim();
+                const imageName = customThemeName || file.name.replace(/\.[^/.]+$/, ""); // 使用自定义名称或文件名
+                
+                displayResult(imageName, base64, file);
+            };
+            
+            reader.readAsDataURL(file);
+        }
+
+        function displayResult(imageName, base64Data, file) {
+            const texts = LANGUAGE_TEXTS[currentLanguage];
+            const resultDiv = document.createElement('div');
+            resultDiv.className = 'output-area';
+            const preview = document.createElement('div');
+            preview.className = 'image-preview';
+            preview.innerHTML = `
+                <h3>📷 ${imageName}</h3>
+                <div class="image-preview-container">
+                    <img src="${base64Data}" alt="${imageName}">
+                </div>
+            `;
+            const info = document.createElement('div');
+            info.className = 'image-info file-info';
+            info.textContent = `${texts.fileSize}: ${(file.size / 1024).toFixed(2)} KB | ${texts.fileType}: ${file.type}`;
+            const jsCode = generateJSCode(imageName, base64Data);
+            
+            const codeArea = document.createElement('div');
+            codeArea.innerHTML = `
+                <h4 class="code-header">${texts.generatedCode}</h4>
+                <button class="copy-btn" onclick="copyToClipboard(this.nextElementSibling)">${texts.copyCode}</button>
+                <div class="code-output">${jsCode}</div>
+                <p class="copy-hint" data-image-name="${imageName}" style="color: #90ffe0; font-size: 14px;">
+                    ${texts.copyHint.replace('条目', `'${imageName}' ${currentLanguage === 'zh' ? '条目' : 'entry'}`)}
+                </p>
+            `;
+            
+            resultDiv.appendChild(preview);
+            resultDiv.appendChild(info);
+            resultDiv.appendChild(codeArea);
+            
+            results.appendChild(resultDiv);
+        }
+
+        function generateJSCode(imageName, base64Data) {
+            return `'${imageName}': {
+    name: '${imageName}',
+    data: '${base64Data}'
+ },`;
+        }
+
+        function copyToClipboard(element) {
+            const texts = LANGUAGE_TEXTS[currentLanguage];
+            const text = element.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = element.previousElementSibling;
+                const originalText = btn.textContent;
+                btn.textContent = texts.copied;
+                btn.classList.add('copied');
+                btn.style.background = '#4CAF50';
+                
+                setTimeout(() => {
+                    btn.textContent = texts.copyCode;
+                    btn.classList.remove('copied');
+                    btn.style.background = '#4CAF50';
+                }, 2000);
+            }).catch(err => {
+                console.error('Copy failed:', err);
+                alert(texts.copyFailed);
+            });
+        }
+
+
+    </script>
+</body>
+</html> 
