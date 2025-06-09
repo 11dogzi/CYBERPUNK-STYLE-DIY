@@ -4,10 +4,9 @@
 *A comprehensive ComfyUI theme plugin with stunning cyberpunk aesthetics and powerful customization features*
 
 ## 🛡️ **重要说明 | Important Notice**
-
-> # 🚀 **零破坏安装 | Zero-Impact Installation**
-> # ✅ **本插件不会破坏任何环境！无需安装任何requirements.txt！**
-> # ✅ **This plugin will NOT break any environment! No requirements.txt installation needed!**
+🚀 **零破坏安装 | Zero-Impact Installation**
+✅ **本插件不会破坏任何环境！无需安装任何requirements.txt！**
+✅ **This plugin will NOT break any environment! No requirements.txt installation needed!**
 
 **🔒 完全安全 | Completely Safe**  
 - 🛡️ 纯前端扩展，无需后端依赖 | Pure frontend extension, no backend dependencies required
@@ -223,8 +222,6 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
 - **🖼️ 背景 | Background**: 背景图片管理 | Background image management
 - **🔤 字体 | Font**: 字体选择和上传 | Font selection and upload
 
-![设置面板界面](./images/usage-settings-panel.jpg)
-
 ### 🎨 **主题选择和切换 | Theme Selection and Switching**
 
 1. **选择预设主题 | Select Preset Theme**:
@@ -235,8 +232,6 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - 点击 **"🎨 自定义主题编辑器"** | Click **"🎨 Custom Theme Editor"**
    - 调整各种颜色参数 | Adjust various color parameters
    - 实时预览效果 | Real-time preview effects
-
-![主题选择切换](./images/usage-theme-selection.jpg)
 
 ### 🔗 **动态连线设置 | Dynamic Link Settings**
 
@@ -260,8 +255,6 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - 文字将立即在连线上显示动画效果 | Text will immediately show animation effects on connections
    - 支持emoji和特殊字符：🚀✨🎯💡 | Supports emojis and special characters: 🚀✨🎯💡
 
-![动态连线设置步骤](./images/usage-dynamic-links-setup.jpg)
-
 ### 🎯 **节点快速导航使用 | Node Quick Navigation Usage**
 
 #### **快速跳转到连接节点 | Quick Jump to Connected Node**
@@ -276,8 +269,6 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - 画布会平滑移动到目标节点位置 | Canvas will smoothly move to target node position
    - 目标节点会出现脉冲高亮效果 | Target node will show pulsing highlight effect
    - 支持输入端口和输出端口的双向跳转 | Support bidirectional jumping for input and output ports
-
-![节点快速导航使用](./images/usage-node-navigation.jpg)
 
 ### 🚨 **错误节点快速定位使用 | Error Node Quick Location Usage**
 
@@ -299,8 +290,6 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - 查看详细的错误信息和堆栈跟踪 | View detailed error information and stack traces
    - 错误信息包含节点ID、类型和具体错误原因 | Error information includes node ID, type and specific error cause
 
-![错误节点定位使用](./images/usage-error-node-location.jpg)
-
 ### 🖼️ **背景图片设置 | Background Image Settings**
 
 #### **上传和应用背景 | Upload and Apply Background**
@@ -315,8 +304,6 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - **🔄 拉伸铺满 | Stretch Fill**: 适合纯色或简单图案 | Suitable for solid colors or simple patterns
    - **🎯 保持比例平铺 | Aspect Ratio Tile**: 适合无缝平铺图案 | Suitable for seamless tiling patterns  
    - **📍 自定义位置 | Custom Position**: 需要精确控制的复杂背景 | Complex backgrounds requiring precise control
-
-![背景图片上传步骤](./images/usage-background-upload-steps.jpg)
 
 #### **自定义位置模式使用 | Custom Position Mode Usage**
 
@@ -339,8 +326,6 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - 先调整缩放获得理想大小，再微调位置 | First adjust scale for ideal size, then fine-tune position
    - 使用固定背景模式保持背景稳定 | Use fixed background mode to keep background stable
 
-![自定义位置模式使用](./images/usage-custom-position-mode.jpg)
-
 ### 🔤 **字体管理 | Font Management**
 
 1. **选择系统字体 | Select System Font**:
@@ -354,8 +339,6 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
 3. **字体应用范围 | Font Application Scope**:
    - 同时应用到ComfyUI界面和节点文本 | Applied to both ComfyUI interface and node text
    - 支持中文、英文、特殊字符 | Supports Chinese, English, special characters
-
-![字体管理操作](./images/usage-font-management-steps.jpg)
 
 ### ⚙️ **配置管理 | Configuration Management**
 
@@ -376,8 +359,6 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
 🔄 重置配置 → 确认操作 → 恢复默认 + 清除缓存 + 刷新页面
 🔄 Reset Config → Confirm Action → Restore Defaults + Clear Cache + Refresh Page
 ```
-
-![配置管理操作](./images/usage-config-management-steps.jpg)
 
 ---
 
