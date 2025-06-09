@@ -1,0 +1,9 @@
+# 忽略整个images目录
+images/
+
+# 其他常见忽略项
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
+*.log 

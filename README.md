@@ -29,7 +29,7 @@
 - **⚡ 实时切换 | Real-time Switching**: 无需重启，即时生效 | No restart required, instant effect
 - **🎯 智能适配 | Smart Adaptation**: 所有功能和提示均支持双语 | All features and prompts support bilingual
 
-![多语言支持](./images/multi-language-support.png)
+![多语言支持](./images/multi-language-support.jpg)
 
 ### 🎨 **多种主题选择 | Multiple Theme Options**
 
@@ -40,7 +40,7 @@
 - **💚 绿色主题 | Green Theme**: 自然灵感的绿色调色板 | Nature-inspired green palette
 - **🎨 自定义主题 | Custom Theme**: 完全可自定义的颜色配置 | Fully customizable color configuration
 
-![多种主题选择](./images/themes.png)
+![多种主题选择](./images/themes.gif)
 
 ### ⚡ **动态视觉效果 | Dynamic Visual Effects**
 
@@ -57,7 +57,7 @@ Supports 8 different animation modes:
 7. **🐶 可爱狗狗 | Cute Dog**: 简单移动的狗狗emoji | Simple moving dog emoji
 8. **✍️ 自定义文字 | Custom Text**: 🆕 用户输入的文字动画 | 🆕 User input text animation
 
-![动态连线效果](./images/dynamic-links.png)
+![动态连线效果](./images/dynamic-links.gif)
 
 #### **⚙️ 可调节参数 | Adjustable Parameters**
 - **速度控制 | Speed Control**: 1-20级可调 | Adjustable from 1-20 levels
@@ -66,13 +66,9 @@ Supports 8 different animation modes:
 - **粒子数量 | Particle Count**: 同时显示的粒子数 | Number of simultaneous particles
 - **透明度 | Alpha**: 粒子和连线透明度 | Particle and line transparency
 
-![可调节参数](./images/animation-parameters.png)
-
 #### **🔌 电路板连线 | Circuit Board Lines**
 - **技术风格连接 | Technical Style Connections**: 电路板风格的连线效果 | Circuit board style connection effects
 - **智能路径规划 | Smart Path Planning**: 自动避障的连线路径 | Automatic obstacle-avoiding connection paths
-
-![电路板连线](./images/circuit-board-lines.png)
 
 #### **🔌 端口快速连接 | Port Quick Connect** 🆕
 - **智能端口识别 | Smart Port Recognition**: 自动识别同名端口 | Automatically recognize same-name ports
@@ -80,7 +76,24 @@ Supports 8 different animation modes:
 - **一键连接同名端口 | One-click Connect Same-name Ports**: 快速连接工作流中所有同名端口 | Quickly connect all same-name ports in workflow
 - **连接状态提示 | Connection Status Prompt**: 显示已连接端口数量和状态 | Display connected port count and status
 
-![端口快速连接](./images/port-quick-connect.png)
+![端口快速连接](./images/port-quick-connect.gif)
+
+#### **🎯 节点快速导航 | Node Quick Navigation** 🆕
+- **快速移动到连接节点 | Quick Navigate to Connected Node**: 右键端口选择"🎯 转到连接点"快速跳转到连接的节点 | Right-click on ports and select "🎯 Go To Connection" to quickly jump to connected nodes
+- **平滑动画跳转 | Smooth Animation Transition**: 使用平滑动画效果移动到目标节点位置 | Use smooth animation effects to move to target node position
+- **智能高亮显示 | Smart Highlighting**: 目标节点会有脉冲高亮效果，便于快速识别 | Target nodes will have pulsing highlight effects for quick identification
+- **双向导航支持 | Bidirectional Navigation Support**: 支持从输入端口跳转到输出端口，反之亦然 | Support jumping from input ports to output ports and vice versa
+
+![节点快速导航](./images/node-quick-navigation.gif)
+
+#### **🚨 错误节点快速定位 | Error Node Quick Location** 🆕
+- **自动错误检测 | Automatic Error Detection**: 智能识别执行失败、验证错误等各种类型的错误节点 | Intelligently identify various types of error nodes including execution failures and validation errors
+- **一键跳转报错节点 | One-click Jump to Error Node**: 右键画布选择"🚨 跳转到报错节点"快速定位错误 | Right-click on canvas and select "🚨 Jump to Error Node" to quickly locate errors
+- **循环查看多个错误 | Cycle Through Multiple Errors**: 如有多个错误节点，可连续点击循环查看所有错误 | If there are multiple error nodes, you can click continuously to cycle through all errors
+- **详细错误信息显示 | Detailed Error Information Display**: 控制台显示详细的错误信息和堆栈跟踪 | Console displays detailed error information and stack traces
+- **特殊错误样式 | Special Error Styling**: 错误节点具有红色脉冲高亮效果，易于识别 | Error nodes have red pulsing highlight effects for easy identification
+
+![错误节点快速定位](./images/error-node-location.gif)
 
 #### **🖼️ 节点标题图像 | Node Title Images** 🆕
 - **自定义节点图标 | Custom Node Icons**: 为节点标题添加自定义图像 | Add custom images to node titles
@@ -89,7 +102,7 @@ Supports 8 different animation modes:
 - **自适应缩放 | Adaptive Scaling**: 图像自动适配节点标题区域 | Images automatically adapt to node title area
 - **批量应用 | Batch Application**: 可同时为多个节点设置相同图像 | Apply same image to multiple nodes simultaneously
 
-![节点标题图像](./images/node-title-images.png)
+![节点标题图像](./images/node-title-images.gif)
 
 #### **✍️ 自定义文字动画 | Custom Text Animation** 🆕
 - **个性化文字 | Personalized Text**: 用户可输入任意文字作为动画元素 | Users can input any text as animation elements
@@ -97,7 +110,7 @@ Supports 8 different animation modes:
 - **即时生效 | Instant Effect**: 输入的文字立即在连线上显示动画效果 | Input text immediately shows animation effects on connections
 - **多语言支持 | Multi-language Support**: 支持中文、英文、emoji和特殊字符 | Supports Chinese, English, emojis and special characters
 
-![自定义文字动画](./images/custom-text-animation.png)
+![自定义文字动画](./images/custom-text-animation.gif)
 
 ### 🖼️ **高级背景管理 | Advanced Background Management**
 
@@ -106,15 +119,12 @@ Supports 8 different animation modes:
 - **文件大小限制 | File Size Limit**: 最大5MB，确保性能 | Max 5MB for optimal performance
 - **拖拽上传 | Drag & Drop**: 便捷的文件上传方式 | Convenient file upload method
 
-![自定义背景图片](./images/background-upload.png)
+![自定义背景图片](./images/background-upload.gif)
 
 #### **🎨 三种填充模式 | Three Fill Modes**
 1. **🔄 拉伸铺满 | Stretch Fill**: 图像拉伸至屏幕大小 | Scale image to fill entire screen
 2. **🎯 保持比例平铺 | Aspect Ratio Tile**: 保持原始尺寸重复铺设 | Repeat image at original size
 3. **📍 自定义位置 | Custom Position**: 精确的位置和缩放控制 | Precise position and scale control
-
-![三种填充模式](./images/fill-modes.png)
-
 #### **🎛️ 精密位置控制 | Precision Position Control**
 - **坐标系统 | Coordinate System**: 
   - X坐标 | X-axis: 1=左边缘 | left edge, 100=右边缘 | right edge
@@ -123,13 +133,10 @@ Supports 8 different animation modes:
 - **自动重置 | Auto Reset**: 缩放时位置自动居中 | Position auto-centers when scaling
 - **边界外定位 | Out-of-bounds Positioning**: 支持移动到屏幕外 | Support for moving outside screen boundaries
 
-![精密位置控制](./images/position-control.png)
-
 #### **🔒 固定背景模式 | Fixed Background Mode**
 - **独立移动 | Independent Movement**: 节点移动时背景保持固定 | Background stays fixed when nodes move
 - **视觉稳定性 | Visual Stability**: 提供稳定的视觉参考点 | Provides stable visual reference points
-
-![固定背景模式](./images/fixed-background.png)
+![图像背景](./images/fill-modes.gif)
 
 ### 🔤 **字体管理 | Font Management**
 
@@ -138,7 +145,7 @@ Supports 8 different animation modes:
 - **实时预览 | Real-time Preview**: 字体更改即时预览效果 | Instant preview of font changes
 - **字体搜索 | Font Search**: 快速搜索和筛选字体 | Quick search and filter fonts
 
-![字体管理](./images/font-management.png)
+![字体管理](./images/font-management.gif)
 
 ### ⚡ **性能优化 | Performance Optimization**
 
@@ -150,9 +157,6 @@ Supports 8 different animation modes:
 #### **🪶 轻量模式 | Light Mode**
 - **最小资源消耗 | Minimal Resource Usage**: 极简动画效果 | Minimal animation effects
 - **低端设备优化 | Low-end Device Optimization**: 适合配置较低的设备 | Suitable for lower-spec devices
-
-![性能优化](./images/performance-optimization.png)
-
 ### ⚙️ **配置管理 | Configuration Management**
 
 - **📤 导出配置 | Export Configuration**: 保存当前设置到JSON文件 | Save current settings to JSON file
@@ -160,20 +164,25 @@ Supports 8 different animation modes:
 - **🔄 重置配置 | Reset Configuration**: 恢复默认设置并清除缓存 | Restore default settings and clear cache
 - **💾 自动保存 | Auto Save**: 设置更改实时保存 | Settings changes saved in real-time
 
-![配置管理](./images/configuration-management.png)
-
 ### 🎨 **自定义主题编辑器 | Custom Theme Editor**
 
 - **🎨 颜色自定义 | Color Customization**: 完全自定义所有UI颜色 | Fully customize all UI colors
 - **🌈 渐变设置 | Gradient Settings**: 支持多种渐变方向和效果 | Support for various gradient directions and effects
 - **🔧 节点样式 | Node Styling**: 自定义节点外观和边框 | Customize node appearance and borders
 - **🔌 端口颜色 | Port Colors**: 不同数据类型的端口颜色配置 | Port color configuration for different data types
-
-![自定义主题编辑器](./images/custom-theme-editor.png)
-
 ---
 
 ## 📦 安装方法 | Installation
+
+### 📸 **重要提示：关于图片文件 | Important: About Image Files**
+
+> **🚀 快速安装 | Quick Installation**  
+> 为了减少仓库大小和提高克隆速度，我们将README中的截图图片移至外部存储。  
+> To reduce repository size and improve clone speed, we have moved README screenshots to external storage.
+> 
+> **📥 如需查看完整图片 | To view complete images:**
+> - 在GitHub页面直接查看README | View README directly on GitHub page
+> - 或访问Releases下载图片包 | Or visit Releases to download image package
 
 ### 方法一：Git克隆 | Method 1: Git Clone
    ```bash
@@ -181,8 +190,8 @@ Supports 8 different animation modes:
 # Navigate to ComfyUI custom nodes directory
    cd ComfyUI/custom_nodes/
 
-# 克隆仓库
-# Clone repository
+# 克隆仓库（仅代码，不含大图片文件）
+# Clone repository (code only, without large image files)
 git clone https://github.com/your-repo/CYBERPUNK-STYLE-DIY.git
 
 # 重启ComfyUI
@@ -212,7 +221,7 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
 - **🖼️ 背景 | Background**: 背景图片管理 | Background image management
 - **🔤 字体 | Font**: 字体选择和上传 | Font selection and upload
 
-![设置面板界面](./images/usage-settings-panel.png)
+![设置面板界面](./images/usage-settings-panel.jpg)
 
 ### 🎨 **主题选择和切换 | Theme Selection and Switching**
 
@@ -225,7 +234,7 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - 调整各种颜色参数 | Adjust various color parameters
    - 实时预览效果 | Real-time preview effects
 
-![主题选择切换](./images/usage-theme-selection.png)
+![主题选择切换](./images/usage-theme-selection.jpg)
 
 ### 🔗 **动态连线设置 | Dynamic Link Settings**
 
@@ -249,7 +258,46 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - 文字将立即在连线上显示动画效果 | Text will immediately show animation effects on connections
    - 支持emoji和特殊字符：🚀✨🎯💡 | Supports emojis and special characters: 🚀✨🎯💡
 
-![动态连线设置步骤](./images/usage-dynamic-links-setup.png)
+![动态连线设置步骤](./images/usage-dynamic-links-setup.jpg)
+
+### 🎯 **节点快速导航使用 | Node Quick Navigation Usage**
+
+#### **快速跳转到连接节点 | Quick Jump to Connected Node**
+
+1. **右键点击端口 | Right-click on Port**:
+   ```
+   右键点击任意端口 → 选择"🎯 转到连接点" → 自动跳转到连接的节点
+   Right-click on any port → Select "🎯 Go To Connection" → Auto jump to connected node
+   ```
+
+2. **查看跳转效果 | View Jump Effect**:
+   - 画布会平滑移动到目标节点位置 | Canvas will smoothly move to target node position
+   - 目标节点会出现脉冲高亮效果 | Target node will show pulsing highlight effect
+   - 支持输入端口和输出端口的双向跳转 | Support bidirectional jumping for input and output ports
+
+![节点快速导航使用](./images/usage-node-navigation.jpg)
+
+### 🚨 **错误节点快速定位使用 | Error Node Quick Location Usage**
+
+#### **快速定位错误节点 | Quick Locate Error Node**
+
+1. **执行工作流出现错误时 | When Workflow Execution Has Errors**:
+   ```
+   右键点击画布空白区域 → 选择"🚨 跳转到报错节点" → 自动定位到错误节点
+   Right-click on canvas blank area → Select "🚨 Jump to Error Node" → Auto locate to error node
+   ```
+
+2. **多个错误节点处理 | Multiple Error Nodes Handling**:
+   - 连续点击可循环查看所有错误节点 | Continuous clicking cycles through all error nodes
+   - 控制台会显示当前错误节点信息 | Console displays current error node information
+   - 错误节点会有红色脉冲高亮效果 | Error nodes will have red pulsing highlight effects
+
+3. **错误信息查看 | Error Information Viewing**:
+   - 打开浏览器开发者工具控制台 | Open browser developer tools console
+   - 查看详细的错误信息和堆栈跟踪 | View detailed error information and stack traces
+   - 错误信息包含节点ID、类型和具体错误原因 | Error information includes node ID, type and specific error cause
+
+![错误节点定位使用](./images/usage-error-node-location.jpg)
 
 ### 🖼️ **背景图片设置 | Background Image Settings**
 
@@ -266,7 +314,7 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - **🎯 保持比例平铺 | Aspect Ratio Tile**: 适合无缝平铺图案 | Suitable for seamless tiling patterns  
    - **📍 自定义位置 | Custom Position**: 需要精确控制的复杂背景 | Complex backgrounds requiring precise control
 
-![背景图片上传步骤](./images/usage-background-upload-steps.png)
+![背景图片上传步骤](./images/usage-background-upload-steps.jpg)
 
 #### **自定义位置模式使用 | Custom Position Mode Usage**
 
@@ -289,7 +337,7 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - 先调整缩放获得理想大小，再微调位置 | First adjust scale for ideal size, then fine-tune position
    - 使用固定背景模式保持背景稳定 | Use fixed background mode to keep background stable
 
-![自定义位置模式使用](./images/usage-custom-position-mode.png)
+![自定义位置模式使用](./images/usage-custom-position-mode.jpg)
 
 ### 🔤 **字体管理 | Font Management**
 
@@ -305,7 +353,7 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - 同时应用到ComfyUI界面和节点文本 | Applied to both ComfyUI interface and node text
    - 支持中文、英文、特殊字符 | Supports Chinese, English, special characters
 
-![字体管理操作](./images/usage-font-management-steps.png)
+![字体管理操作](./images/usage-font-management-steps.jpg)
 
 ### ⚙️ **配置管理 | Configuration Management**
 
@@ -327,7 +375,7 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
 🔄 Reset Config → Confirm Action → Restore Defaults + Clear Cache + Refresh Page
 ```
 
-![配置管理操作](./images/usage-config-management-steps.png)
+![配置管理操作](./images/usage-config-management-steps.jpg)
 
 ---
 
@@ -362,6 +410,16 @@ Click the **"🎨 Theme Settings"** button in the interface to open the settings
    - 短文字效果更佳：1-3个字符 | Short text works better: 1-3 characters
    - 使用emoji增加趣味性：🚀💡⭐ | Use emojis for fun: 🚀💡⭐
    - 避免过长文字影响性能 | Avoid overly long text affecting performance
+
+5. **节点导航使用建议 | Node Navigation Usage Recommendations** 🆕:
+   - 复杂工作流中快速定位连接关系 | Quickly locate connection relationships in complex workflows
+   - 调试时跟踪数据流向 | Track data flow during debugging
+   - 大型画布中快速跳转到相关节点 | Quickly jump to related nodes in large canvases
+
+6. **错误定位使用建议 | Error Location Usage Recommendations** 🆕:
+   - 工作流执行失败后立即使用错误定位功能 | Use error location feature immediately after workflow execution failure
+   - 结合控制台查看详细错误信息 | Combine with console to view detailed error information
+   - 修复一个错误后重新检查是否还有其他错误 | After fixing one error, recheck for other errors
 
 ### 🎨 **主题设计建议 | Theme Design Recommendations**
 
