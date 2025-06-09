@@ -1,12 +1,11 @@
-# 🌈 ComfyUI Cyberpunk Theme Plugin
-# 🌈 ComfyUI 赛博朋克主题插件
+# 🌈 ComfyUI 赛博朋克主题插件|Cyberpunk Theme Plugi
 
 *一个全面的 ComfyUI 主题插件，提供炫酷的赛博朋克美学和强大的自定义功能*  
 *A comprehensive ComfyUI theme plugin with stunning cyberpunk aesthetics and powerful customization features*
 
 ## 🛡️ **重要说明 | Important Notice**
 
-### 🚀 **零破坏安装 | Zero-Impact Installation**
+> # 🚀 **零破坏安装 | Zero-Impact Installation**
 > # ✅ **本插件不会破坏任何环境！无需安装任何requirements.txt！**
 > # ✅ **This plugin will NOT break any environment! No requirements.txt installation needed!**
 
