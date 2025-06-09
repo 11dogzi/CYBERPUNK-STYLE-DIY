@@ -37,8 +37,8 @@
 ### ⚡ **动态视觉效果 | Dynamic Visual Effects**
 
 #### **🔗 动态连线效果 | Dynamic Link Effects**
-支持8种不同的动画模式（排序已优化，简单粒子为默认首选）：  
-Supports 8 different animation modes (order optimized with simple particle as default first choice):
+支持8种不同的动画模式：  
+Supports 8 different animation modes:
 
 1. **🔘 简单粒子 | Simple Particle**: 圆点移动效果 | Dot movement effects
 2. **⚡ 简单传输 | Simple Transfer**: 快速移动点 | Fast moving dots
