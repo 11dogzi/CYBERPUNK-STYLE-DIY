@@ -190,9 +190,9 @@ Supports 8 different animation modes:
 # Navigate to ComfyUI custom nodes directory
    cd ComfyUI/custom_nodes/
 
-# 克隆仓库（仅代码，不含大图片文件）
-# Clone repository (code only, without large image files)
-git clone https://github.com/your-repo/CYBERPUNK-STYLE-DIY.git
+# 克隆仓库
+# Clone repository
+git clone https://github.com/11dogzi/CYBERPUNK-STYLE-DIY.git
 
 # 重启ComfyUI
 # Restart ComfyUI
