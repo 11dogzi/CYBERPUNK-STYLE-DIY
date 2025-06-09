@@ -22,6 +22,15 @@
 
 ## ✨ 主要功能 | Key Features
 
+### 🌍 **多语言支持 | Multi-language Support** 🆕
+
+- **🇨🇳 简体中文 | Simplified Chinese**: 完整的中文界面支持 | Complete Chinese interface support
+- **🇺🇸 English | 英文**: Full English interface support | 完整的英文界面支持  
+- **⚡ 实时切换 | Real-time Switching**: 无需重启，即时生效 | No restart required, instant effect
+- **🎯 智能适配 | Smart Adaptation**: 所有功能和提示均支持双语 | All features and prompts support bilingual
+
+![多语言支持](./images/multi-language-support.png)
+
 ### 🎨 **多种主题选择 | Multiple Theme Options**
 
 - **🎨 默认主题 | Default Theme**: 简洁、极简主义界面 | Clean, minimalist interface
