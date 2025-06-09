@@ -28,7 +28,7 @@
 - **⚡ 实时切换 | Real-time Switching**: 无需重启，即时生效 | No restart required, instant effect
 - **🎯 智能适配 | Smart Adaptation**: 所有功能和提示均支持双语 | All features and prompts support bilingual
 
-![多语言支持](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/multi-language-support.jpg)
+![多语言支持](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/multi-language-support.jpg)
 
 ### 🎨 **多种主题选择 | Multiple Theme Options**
 
@@ -39,7 +39,7 @@
 - **💚 绿色主题 | Green Theme**: 自然灵感的绿色调色板 | Nature-inspired green palette
 - **🎨 自定义主题 | Custom Theme**: 完全可自定义的颜色配置 | Fully customizable color configuration
 
-![多种主题选择](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/themes.gif)
+![多种主题选择](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/themes.gif)
 
 ### ⚡ **动态视觉效果 | Dynamic Visual Effects**
 
@@ -57,7 +57,7 @@ Supports 8 different animation modes:
 8. **✍️ 自定义文字 | Custom Text**: 🆕 用户输入的文字动画 | 🆕 User input text animation
 9. **🖼️ 自定义图像 | Custom Image**: 🆕 用户输入的图像动画 | 🆕 User input Image animation
 
-![动态连线效果](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/dynamic-links.gif)
+![动态连线效果](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/dynamic-links.gif)
 
 #### **⚙️ 可调节参数 | Adjustable Parameters**
 - **速度控制 | Speed Control**: 1-20级可调 | Adjustable from 1-20 levels
@@ -76,7 +76,7 @@ Supports 8 different animation modes:
 - **一键连接同名端口 | One-click Connect Same-name Ports**: 快速连接工作流中所有同名端口 | Quickly connect all same-name ports in workflow
 - **连接状态提示 | Connection Status Prompt**: 显示已连接端口数量和状态 | Display connected port count and status
 
-![端口快速连接](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/port-quick-connect.gif)
+![端口快速连接](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/port-quick-connect.gif)
 
 #### **🎯 节点快速导航 | Node Quick Navigation** 🆕
 - **快速移动到连接节点 | Quick Navigate to Connected Node**: 右键端口选择"🎯 转到连接点"快速跳转到连接的节点 | Right-click on ports and select "🎯 Go To Connection" to quickly jump to connected nodes
@@ -84,7 +84,7 @@ Supports 8 different animation modes:
 - **智能高亮显示 | Smart Highlighting**: 目标节点会有脉冲高亮效果，便于快速识别 | Target nodes will have pulsing highlight effects for quick identification
 - **双向导航支持 | Bidirectional Navigation Support**: 支持从输入端口跳转到输出端口，反之亦然 | Support jumping from input ports to output ports and vice versa
 
-![节点快速导航](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/node-quick-navigation.gif)
+![节点快速导航](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/node-quick-navigation.gif)
 
 #### **🚨 错误节点快速定位 | Error Node Quick Location** 🆕
 - **自动错误检测 | Automatic Error Detection**: 智能识别执行失败、验证错误等各种类型的错误节点 | Intelligently identify various types of error nodes including execution failures and validation errors
@@ -93,7 +93,7 @@ Supports 8 different animation modes:
 - **详细错误信息显示 | Detailed Error Information Display**: 控制台显示详细的错误信息和堆栈跟踪 | Console displays detailed error information and stack traces
 - **特殊错误样式 | Special Error Styling**: 错误节点具有红色脉冲高亮效果，易于识别 | Error nodes have red pulsing highlight effects for easy identification
 
-![错误节点快速定位](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/error-node-location.gif)
+![错误节点快速定位](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/error-node-location.gif)
 
 #### **🖼️ 节点标题图像 | Node Title Images** 🆕
 - **自定义节点图标 | Custom Node Icons**: 为节点标题添加自定义图像 | Add custom images to node titles
@@ -102,7 +102,7 @@ Supports 8 different animation modes:
 - **自适应缩放 | Adaptive Scaling**: 图像自动适配节点标题区域 | Images automatically adapt to node title area
 - **批量应用 | Batch Application**: 可同时为多个节点设置相同图像 | Apply same image to multiple nodes simultaneously
 
-![节点标题图像](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/node-title-images.gif)
+![节点标题图像](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/node-title-images.gif)
 
 #### **✍️ 自定义文字动画 | Custom Text Animation** 🆕
 - **个性化文字 | Personalized Text**: 用户可输入任意文字作为动画元素 | Users can input any text as animation elements
@@ -110,8 +110,8 @@ Supports 8 different animation modes:
 - **即时生效 | Instant Effect**: 输入的文字立即在连线上显示动画效果 | Input text immediately shows animation effects on connections
 - **多语言支持 | Multi-language Support**: 支持中文、英文、emoji和特殊字符 | Supports Chinese, English, emojis and special characters
 
-![自定义文字动画](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/custom-text-animation.gif)
-![自定义背景图片](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/background-upload.gif)
+![自定义文字动画](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/custom-text-animation.gif)
+![自定义背景图片](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/background-upload.gif)
 
 ### 🖼️ **高级背景管理 | Advanced Background Management**
 
@@ -120,7 +120,7 @@ Supports 8 different animation modes:
 - **文件大小限制 | File Size Limit**: 最大5MB，确保性能 | Max 5MB for optimal performance
 - **拖拽上传 | Drag & Drop**: 便捷的文件上传方式 | Convenient file upload method
 - 
-![图像背景](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/fill-modes.gif)
+![图像背景](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/fill-modes.gif)
 
 #### **🎨 三种填充模式 | Three Fill Modes**
 1. **🔄 拉伸铺满 | Stretch Fill**: 图像拉伸至屏幕大小 | Scale image to fill entire screen
@@ -146,7 +146,7 @@ Supports 8 different animation modes:
 - **实时预览 | Real-time Preview**: 字体更改即时预览效果 | Instant preview of font changes
 - **字体搜索 | Font Search**: 快速搜索和筛选字体 | Quick search and filter fonts
 
-![字体管理](https://github.com/11dogzi/CYBERPUNK-STYLE-DIY/releases/download/v1.0.0/font-management.gif)
+![字体管理](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/font-management.gif)
 
 ### ⚡ **性能优化 | Performance Optimization**
 
@@ -178,13 +178,14 @@ Supports 8 different animation modes:
 ### 📸 **关于图片文件 | About Image Files**
 
 > **🚀 轻量化仓库 | Lightweight Repository**  
-> 为了减少仓库大小和提高克隆速度，我们将文档图片存储在 GitHub Releases 中。  
-> To reduce repository size and improve clone speed, we store documentation images in GitHub Releases.
+> 为了减少仓库大小和提高克隆速度，我们将文档图片存储在独立的图片仓库中。  
+> To reduce repository size and improve clone speed, we store documentation images in a separate image repository.
 > 
 > **✅ 完美体验 | Perfect Experience:**
-> - 🚀 快速克隆：仅下载代码文件 | Fast clone: Only downloads code files
+> - 🚀 快速克隆：仅下载代码文件（<5MB）| Fast clone: Only downloads code files (<5MB)
 > - 📖 完整文档：GitHub 页面图片正常显示 | Complete docs: Images display properly on GitHub pages  
 > - 🔧 无依赖：插件功能完全独立 | No dependencies: Plugin functionality completely independent
+> - 💾 无限制：图片大小不受限制 | No limits: Image sizes unrestricted
 
 ### 方法一：Git克隆 | Method 1: Git Clone
    ```bash
