@@ -56,6 +56,7 @@ Supports 8 different animation modes:
 6. **✨ 超细流光 | Ultra Thin**: 亮银色光束 | Bright silver beam effects
 7. **🐶 可爱狗狗 | Cute Dog**: 简单移动的狗狗emoji | Simple moving dog emoji
 8. **✍️ 自定义文字 | Custom Text**: 🆕 用户输入的文字动画 | 🆕 User input text animation
+9. **🖼️ 自定义图像 | Custom Image**: 🆕 用户输入的图像动画 | 🆕 User input Image animation
 
 ![动态连线效果](./images/dynamic-links.gif)
 
