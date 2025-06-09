@@ -3,6 +3,16 @@
 *一个全面的 ComfyUI 主题插件，提供炫酷的赛博朋克美学和强大的自定义功能*  
 *A comprehensive ComfyUI theme plugin with stunning cyberpunk aesthetics and powerful customization features*
 
+## 📺 **教学视频 | Tutorial Video**
+
+🎬 **[首个]自定义主题管理器Comfyui主题完全DIY-CYBERPUNK-STYLE-DIY-上线啦！**  
+📺 [观看教学视频 | Watch Tutorial Video](https://www.bilibili.com/video/BV1HuTizBEdi/?share_source=copy_web&vd_source=766e97e9a72d0634f585e86f359dc8d6)
+
+> **💡 强烈推荐观看教学视频！**  
+> 视频详细演示了插件的所有功能和使用技巧，帮助您快速上手。  
+> **💡 Highly recommended to watch the tutorial video!**  
+> The video demonstrates all plugin features and usage tips to help you get started quickly.
+
 ## 🛡️ **重要说明 | Important Notice**
 🚀 **零破坏安装 | Zero-Impact Installation**
 ✅ **本插件不会破坏任何环境！无需安装任何requirements.txt！**
