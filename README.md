@@ -111,6 +111,7 @@ Supports 8 different animation modes:
 - **多语言支持 | Multi-language Support**: 支持中文、英文、emoji和特殊字符 | Supports Chinese, English, emojis and special characters
 
 ![自定义文字动画](./images/custom-text-animation.gif)
+![自定义背景图片](./images/background-upload.gif)
 
 ### 🖼️ **高级背景管理 | Advanced Background Management**
 
@@ -118,8 +119,8 @@ Supports 8 different animation modes:
 - **多格式支持 | Multi-format Support**: PNG、JPG、GIF等常见格式 | PNG, JPG, GIF and other common formats
 - **文件大小限制 | File Size Limit**: 最大5MB，确保性能 | Max 5MB for optimal performance
 - **拖拽上传 | Drag & Drop**: 便捷的文件上传方式 | Convenient file upload method
-
-![自定义背景图片](./images/background-upload.gif)
+- 
+![图像背景](./images/fill-modes.gif)
 
 #### **🎨 三种填充模式 | Three Fill Modes**
 1. **🔄 拉伸铺满 | Stretch Fill**: 图像拉伸至屏幕大小 | Scale image to fill entire screen
@@ -136,7 +137,7 @@ Supports 8 different animation modes:
 #### **🔒 固定背景模式 | Fixed Background Mode**
 - **独立移动 | Independent Movement**: 节点移动时背景保持固定 | Background stays fixed when nodes move
 - **视觉稳定性 | Visual Stability**: 提供稳定的视觉参考点 | Provides stable visual reference points
-![图像背景](./images/fill-modes.gif)
+
 
 ### 🔤 **字体管理 | Font Management**
 
