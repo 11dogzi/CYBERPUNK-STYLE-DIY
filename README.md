@@ -177,13 +177,24 @@ Supports 8 different animation modes:
 
 ### 📸 **重要提示：关于图片文件 | Important: About Image Files**
 
-> **🚀 快速安装 | Quick Installation**  
-> 为了减少仓库大小和提高克隆速度，我们将README中的截图图片移至外部存储。  
-> To reduce repository size and improve clone speed, we have moved README screenshots to external storage.
+> **🎯 两种安装方式 | Two Installation Options**  
 > 
-> **📥 如需查看完整图片 | To view complete images:**
-> - 在GitHub页面直接查看README | View README directly on GitHub page
-> - 或访问Releases下载图片包 | Or visit Releases to download image package
+> **方式1 - 完整克隆（推荐用于查看文档）| Option 1 - Full Clone (Recommended for documentation viewing):**
+> ```bash
+> git clone https://github.com/11dogzi/CYBERPUNK-STYLE-DIY.git
+> ```
+> 包含所有图片，README.md 可以正常预览，但文件较大  
+> Includes all images, README.md displays properly, but larger file size
+>
+> **方式2 - 不下载图片（推荐用于实际使用）| Option 2 - Without Images (Recommended for actual use):**
+> ```bash
+> GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/11dogzi/CYBERPUNK-STYLE-DIY.git
+> ```
+> 仅下载代码文件，体积小，但 README 图片不显示  
+> Downloads only code files, smaller size, but README images won't display
+> 
+> **📝 说明 | Note:** 插件功能不依赖这些图片，它们仅用于文档展示  
+> **📝 Note:** Plugin functionality doesn't depend on these images, they're only for documentation
 
 ### 方法一：Git克隆 | Method 1: Git Clone
    ```bash
