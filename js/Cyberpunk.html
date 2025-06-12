@@ -159,9 +159,7 @@
             <button class="lang-btn active" onclick="switchLanguage('zh')" id="btn-zh">🇨🇳 中文</button>
             <button class="lang-btn" onclick="switchLanguage('en')" id="btn-en">🇺🇸 English</button>
         </div>
-
         <h1 id="main-title">🎨 Cyberpunk标题生成器</h1>
-        
         <div class="instructions">
             <h3 id="instructions-title">使用说明：</h3>
             <ol id="instructions-list">
@@ -171,7 +169,6 @@
                 <li id="instruction-4">保存文件后重新加载ComfyUI即可使用新图像</li>
             </ol>
         </div>
-
                 <div class="upload-area" id="uploadArea">
             <p id="upload-text">点击按钮选择文件或拖拽PNG图像到此处</p>
             <button class="upload-btn" onclick="document.getElementById('imageInput').click()" id="upload-btn">
@@ -188,10 +185,8 @@
                 <small id="theme-name-hint" style="color: #888; font-size: 12px; display: block; margin-top: 5px;">💡 留空将使用文件名作为主题名称</small>
             </div>
         </div>
-
         <div id="results"></div>
     </div>
-
     <script>
         const LANGUAGE_TEXTS = {
             zh: {
@@ -239,7 +234,6 @@
                 themeNameHint: '💡 Leave empty to use filename as theme name'
             }
         };
-
         let currentLanguage = 'zh';
         function switchLanguage(lang) {
             currentLanguage = lang;
@@ -248,7 +242,6 @@
             updatePageTexts();
             updateExistingResults();
         }
-
         function updatePageTexts() {
             const texts = LANGUAGE_TEXTS[currentLanguage];
             document.title = texts.mainTitle.replace('🎨 ', '');
@@ -266,31 +259,25 @@
             document.getElementById('themeNameInput').placeholder = texts.themeNamePlaceholder;
             document.getElementById('theme-name-hint').textContent = texts.themeNameHint;
         }
-
         function updateExistingResults() {
             const codeHeaders = document.querySelectorAll('.code-header');
             const copyBtns = document.querySelectorAll('.copy-btn');
             const fileInfos = document.querySelectorAll('.file-info');
             const copyHints = document.querySelectorAll('.copy-hint');
-            
             const texts = LANGUAGE_TEXTS[currentLanguage];
-            
             codeHeaders.forEach(header => {
                 header.textContent = texts.generatedCode;
             });
-            
             copyBtns.forEach(btn => {
                 if (!btn.classList.contains('copied')) {
                     btn.textContent = texts.copyCode;
                 }
             });
-            
             copyHints.forEach(hint => {
                 const imageName = hint.dataset.imageName || '';
                 hint.innerHTML = texts.copyHint.replace('条目', `'${imageName}' ${currentLanguage === 'zh' ? '条目' : 'entry'}`);
             });
         }
-
         const uploadArea = document.getElementById('uploadArea');
         const imageInput = document.getElementById('imageInput');
         const results = document.getElementById('results');
@@ -298,11 +285,9 @@
             e.preventDefault();
             uploadArea.classList.add('dragover');
         });
-
         uploadArea.addEventListener('dragleave', () => {
             uploadArea.classList.remove('dragover');
         });
-
         uploadArea.addEventListener('drop', (e) => {
             e.preventDefault();
             uploadArea.classList.remove('dragover');
@@ -312,9 +297,6 @@
         imageInput.addEventListener('change', (e) => {
             handleFiles(e.target.files);
         });
-
-
-
         function handleFiles(files) {
             results.innerHTML = '';
             const themeNameInput = document.getElementById('themeNameInput');
@@ -327,28 +309,22 @@
             } else {
                 themeNameInput.placeholder = texts.themeNamePlaceholder;
             }
-            
             Array.from(files).forEach(file => {
                 if (file.type.startsWith('image/')) {
                     processImage(file);
                 }
             });
         }
-
         function processImage(file) {
             const reader = new FileReader();
-            
             reader.onload = function(e) {
                 const base64 = e.target.result;
                 const customThemeName = document.getElementById('themeNameInput').value.trim();
                 const imageName = customThemeName || file.name.replace(/\.[^/.]+$/, ""); // 使用自定义名称或文件名
-                
                 displayResult(imageName, base64, file);
             };
-            
             reader.readAsDataURL(file);
         }
-
         function displayResult(imageName, base64Data, file) {
             const texts = LANGUAGE_TEXTS[currentLanguage];
             const resultDiv = document.createElement('div');
@@ -365,7 +341,6 @@
             info.className = 'image-info file-info';
             info.textContent = `${texts.fileSize}: ${(file.size / 1024).toFixed(2)} KB | ${texts.fileType}: ${file.type}`;
             const jsCode = generateJSCode(imageName, base64Data);
-            
             const codeArea = document.createElement('div');
             codeArea.innerHTML = `
                 <h4 class="code-header">${texts.generatedCode}</h4>
@@ -375,21 +350,17 @@
                     ${texts.copyHint.replace('条目', `'${imageName}' ${currentLanguage === 'zh' ? '条目' : 'entry'}`)}
                 </p>
             `;
-            
             resultDiv.appendChild(preview);
             resultDiv.appendChild(info);
             resultDiv.appendChild(codeArea);
-            
             results.appendChild(resultDiv);
         }
-
         function generateJSCode(imageName, base64Data) {
             return `'${imageName}': {
     name: '${imageName}',
     data: '${base64Data}'
  },`;
         }
-
         function copyToClipboard(element) {
             const texts = LANGUAGE_TEXTS[currentLanguage];
             const text = element.textContent;
@@ -399,7 +370,6 @@
                 btn.textContent = texts.copied;
                 btn.classList.add('copied');
                 btn.style.background = '#4CAF50';
-                
                 setTimeout(() => {
                     btn.textContent = texts.copyCode;
                     btn.classList.remove('copied');
@@ -410,8 +380,6 @@
                 alert(texts.copyFailed);
             });
         }
-
-
     </script>
 </body>
 </html> 
