@@ -9,8 +9,8 @@ class CYBERPUNKHT:
         return {"required": {
                     "Float": ("FLOAT", {
                         "default": 1,
-                        "min": -999999,  # 设置一个很大的范围，让前端控制实际范围
-                        "max": 999999,   # 设置一个很大的范围，让前端控制实际范围
+                        "min": -999999,
+                        "max": 999999,
                         "step": 0.01,
                         "display": "slider"
                     }),
