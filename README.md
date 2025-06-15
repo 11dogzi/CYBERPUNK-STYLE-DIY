@@ -88,6 +88,18 @@ Supports 8 different animation modes:
 
 ![端口快速连接](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/port-quick-connect.gif)
 
+#### **🔌 快速连线 | Quick Connect** 🆕
+- **端口快速连线 | Port quick connection**: 快速显示端口连线导航 | Quick display port connection navigation
+- **磁性快速连线 | Magnetic quick connect**: 磁性端口快捷连线 | Magnetic port quick connection
+
+![快速连线](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/xincixing.gif)
+
+#### **🔌 高亮选择连线 | Highlight Select Connection** 🆕
+- **常规模式高亮连线 | High brightness connection in regular mode**: 开启仅高亮后 选中节点以高亮突出显示 | Enable only highlighting and select nodes to highlight them
+- **动画模式高亮连线 | Animation mode highlights lines**: 开启动画后 选中节点以高亮突出显示 | After starting the animation, select the node to highlight it
+
+![节点快速导航](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/xingaoliang.gif)
+
 #### **🎯 节点快速导航 | Node Quick Navigation** 🆕
 - **快速移动到连接节点 | Quick Navigate to Connected Node**: 右键端口选择"🎯 转到连接点"快速跳转到连接的节点 | Right-click on ports and select "🎯 Go To Connection" to quickly jump to connected nodes
 - **平滑动画跳转 | Smooth Animation Transition**: 使用平滑动画效果移动到目标节点位置 | Use smooth animation effects to move to target node position
@@ -104,6 +116,16 @@ Supports 8 different animation modes:
 - **特殊错误样式 | Special Error Styling**: 错误节点具有红色脉冲高亮效果，易于识别 | Error nodes have red pulsing highlight effects for easy identification
 
 ![错误节点快速定位](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/error-node-location.gif)
+
+#### **💻 透明笔记标注 | Transparent note annotation** 🆕
+- **自定义透明笔记节点 | Customize transparent note nodes**: 自由调整文本大小 颜色 背景透明度 植入链接 | Freely adjust text size, color, background transparency, and embed links
+
+![透明笔记标注](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/xinbiji.gif)
+
+#### **💻 通用自定义滑条 | Universal custom slider** 🆕
+- **自定义整数浮点滑条 | Custom integer floating-point slider**: 输出类型可调整 滑条风格可调整 | Output type adjustable, slider style adjustable
+
+![通用自定义滑条](https://raw.githubusercontent.com/11dogzi/CYBERPUNK-STYLE-DIY-Images/main/xinhuatiao.gif)
 
 #### **🖼️ 节点标题图像 | Node Title Images** 🆕
 - **自定义节点图标 | Custom Node Icons**: 为节点标题添加自定义图像 | Add custom images to node titles
